@@ -103,8 +103,8 @@ public class LoginScreen extends javax.swing.JFrame {
         String u = jtfUser.getText();
         String p = jtfPassword.getText();
         if ((u.equals("admin")) && (p.equals("admin"))){
-            MainScreen a = MainScreen();
-            p.setVisible(true);
+            MainScreen a = new MainScreen();
+            a.setVisible(true);
             this.setVisible(false);
             
         }else{
